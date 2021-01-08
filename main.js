@@ -526,7 +526,7 @@ function gameOver() {
         winnerNameElem.text(players[0].name);
         winnerPictureElem.html("<img src=\"images/pandav.png\">");
     } else {
-        winnerNameElem.text(players[0].name);
+        winnerNameElem.text(players[1].name);
         winnerPictureElem.html("<img src=\"images/kaurav.png\">");
     }    
 }

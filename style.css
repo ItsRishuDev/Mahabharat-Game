@@ -1,0 +1,334 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    list-style-type: none;
+    margin: 10px;
+    font-size: x-large;
+}
+
+body{
+    background-image: url('images/board-background.jpg');
+    background-size: 100% 100%;
+}
+
+.hide{
+    display: none;
+}
+
+/* Game Container  */
+.game-container{
+    margin: auto;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+/* Title Conatiner  */
+#game-title-container{
+    margin: auto;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.game-title{
+    width: 500px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mahabharat{
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+/* Player Score Container  */
+#player-1-data-div, #player-2-data-div {
+	width: 300px;
+	height: 800px;
+	background-image: url("images/player-background.png");
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.player-data {
+	height: 650px;
+	width: 180px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+
+
+/* Board Container  */
+#board {
+	width: 750px;
+	height: 850px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("images/antique-paper.png");
+	background-size: 100% 100%;
+	border-radius: 25px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    padding: auto;
+    width: 600px;
+    height: 600px;
+}
+
+.grid-item {
+    padding: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.battleArea{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    right: 100px;
+    left: 100px;
+    border: blanchedalmond;
+    border-radius: 25px;
+    border-style: groove;
+    background-color: white;
+}
+
+.free{
+    background-color: #c2b280;
+    opacity: 0;
+}
+
+.blockage{
+    background-image: url('https://www.flaticon.com/svg/static/icons/svg/2599/2599796.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Khadag{
+    background-image: url('images/khadag.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.Gada{
+    background-image: url('images/gada.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.DhanushBan{
+    background-image: url('images/dhanushban.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Trishul{
+    background-image: url('images/trishul.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Chakra{
+    background-image: url('images/chakra.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Pandav{
+    background-image: url('images/pandav.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Kaurav{
+    background-image: url('images/kaurav.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.available{
+    background-color: white;
+	opacity: 0.5;
+	border-radius: 20px;
+}
+
+/* Player Detail Section  */
+.messages{
+    padding: 20px;
+}
+
+.player-name{
+    padding: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.player-info, .turn-message{
+    padding: 5px;
+    font-weight: normal;
+    font-size: larger;
+}
+
+.player-health, .player-weapon-damage{
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.player-weapon{
+    padding: 5px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.fight-message, .turn-message{
+    padding-bottom: 5px;
+    font-weight: normal;
+    font-size: larger;
+}
+.weapon-title{
+    padding: 5px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/* Battle Message  */
+#start-battle-message-container{
+    width: 320px;
+	height: 100px;
+	position: absolute;
+	top: 350px;
+	left: 50%;
+	margin-left: -160px;
+	margin-top: -50px;
+	z-index: 1;
+	background-image: url("images/battle-start.png");
+	background-size: 100% 100%;
+	border-radius: 35px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#start-battle-message {
+	width: 300px;
+	height: 50px;
+	border-radius: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+/* Game Over Message  */
+#game-over-container {
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	top: 350px;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -200px;
+	z-index: 1;
+	background-image: url("images/game-over-bg.png");
+	background-size: 100% 100%;
+	border-radius: 25px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#game-over {
+	width: 375px;
+	height: 375px;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* Buttons  */
+
+.button-attack {
+	width: 120px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 25px;
+	background-color: red;
+	color: white;
+	font-size: 23px;
+	font-weight: 700;
+}
+
+.button-attack:hover {
+	background-color: white;
+	color: red;
+}
+
+.button-defend {
+	width: 120px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 25px;
+	background-color: green;
+	color: white;
+	font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.button-defend:hover {
+	background-color: white;
+	color: green;
+}
+
+#play-again-button {
+	width: 150px;
+	height: 40px;
+	border: 1px solid black;
+	border-radius: 25px;
+	background-color: green;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#play-again-button:hover {
+	width: 160px;
+	height: 50px;
+	background-color: red;
+}
+
+.pandavDetail, .kauravDetail{
+    padding: 30px;
+    margin: 20px;
+} 
+
+.pandavDetail > h3 , .kauravDetail > h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.player-weapon-img img{
+    width: 40%;
+}

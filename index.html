@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <title>Mahabharat - The Board Game</title>
+</head>
+
+<body>
+    <div id="game-title-container">
+        <div class="game-title">
+            <img class="mahabharat" src="images/mahabharat.png" alt="Mahabharat">
+        </div>
+    </div>
+    <div class="game-container">
+        <div id="player-1-data-div">
+            <div class="player-data">
+                <div class="player-info">Player 1</div><br>
+                <div class="player-img"></div>
+                <div class="player-name"></div>
+                <div class="player-health"></div><br>
+                <div class="weapon-title">Weapon</div>
+                <div class="player-weapon-img"></div>
+                <div class="player-weapon"></div>
+                <div class="player-weapon-damage"></div>
+                <div class="messages">
+                    <div class="turn-message">Player 1<br> Turn</div>
+                    <div class="fight-message"></div>
+                </div>
+                <div class="buttons hide">
+                    <button class="button-attack" type="button">Attack</button>
+                    <button class="button-defend" type="button">Defend</button>
+                </div>
+            </div>
+        </div>
+        <div id="board">
+            <div class="grid-container">
+
+            </div>
+        </div>
+        <div id="player-2-data-div">
+            <div class="player-data">
+                <div class="player-info">Player 2</div><br>
+                <div class="player-img"></div>
+                <div class="player-name"></div>
+                <div class="player-health"></div><br>
+                <div class="weapon-title">Weapon</div>
+                <div class="player-weapon-img"></div>
+                <div class="player-weapon"></div>
+                <div class="player-weapon-damage"></div>
+                <div class="messages">
+                    <div class="turn-message hide">Player 2<br> Turn</div>
+                    <div class="fight-message"></div>
+                </div>
+                <div class="buttons hide">
+                    <button class="button-attack" type="button">Attack</button>
+                    <button class="button-defend" type="button">Defend</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="start-battle-message-container">
+        <div id="start-battle-message">
+            <h1>Battle begins !!!</h1>
+        </div>
+    </div>
+    <div id="game-over-container">
+        <div id="game-over">
+            <div>
+                <h1>The Game is over !</h1>
+            </div>
+            <div>
+                <h2>The winner is :</h2>
+            </div>
+            <div class="player-name"></div>
+            <div class="player-picture"></div>
+            <div id="play-again-button-container">
+                <button id="play-again-button" type="button" onclick="location.reload()">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="previous.js"></script> -->
+</body>
+
+</html>

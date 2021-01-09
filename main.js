@@ -446,7 +446,7 @@ function player1FightTurn(event) {
         }
         player1Defend = false;
         players[1].life -= damage;
-        player1FightMessageElem.text(`You attacked and made ${damage} points of damage to Kaurav`);
+        player1FightMessageElem.text(`You attacked and made ${damage} points of damage.`);
 		if (players[1].life <= 0) {
 			player2HealthValueElem[0].innerHTML = 0;
 			player2FightMessageElem.text("You lost !!!");
@@ -484,7 +484,7 @@ function player2FightTurn(event) {
         }
         player2Defend = false;
         players[0].life -= damage;
-        player2FightMessageElem.text(`You attacked and made ${damage} points of damage to Pandav`);
+        player2FightMessageElem.text(`You attacked and made ${damage} points of damage.`);
 		if (players[0].life <= 0) {
 			player1HealthValueElem[0].innerHTML = 0;
 			player1FightMessageElem.text("You lost !!!");
